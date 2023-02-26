@@ -6,12 +6,18 @@ import App from './App';
 import Footer from './components/footer/Footer'
 import reportWebVitals from './reportWebVitals';
 
+const companyData = {
+  email: "contact@example2.com",
+  city: "Warsaw",
+  street: "Ulicowa"
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Heading />
+    <Heading headerTitle="Props info"/>
     <App />
-    <Footer />
+    <Footer companyData={companyData} contactEmail="lol@example.com"/>
   </React.StrictMode>
 );
 
